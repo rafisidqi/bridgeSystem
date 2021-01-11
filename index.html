@@ -7,7 +7,7 @@
      type="text/javascript"></script>-->
     <script src="https://code.highcharts.com/stock/highstock.js"></script>
     <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
-    <script src="https://rawgithub.com/highslide-software/export-csv/master/export-csv.js"></script>
+	<script src="https://code.highcharts.com/modules/export-data.js"></script>
     <script type="text/javascript">
       
       // Webpage Javascript to chart multiple ThingSpeak channels on two axis with navigator, load historical data, and export cvs data.
@@ -277,7 +277,7 @@ $(document).ready(function()
 		exporting: {
 		  enabled: true,
       csv: {
-        dateFormat: '%d/%m/%Y %I:%M:%S %p'
+        dateFormat: '%d/%m/%Y %H:%M:%S'
         }
 		},
 		legend: {
