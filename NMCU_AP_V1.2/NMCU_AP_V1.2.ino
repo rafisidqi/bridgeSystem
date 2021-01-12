@@ -208,12 +208,7 @@ void loop() {
     Serial.print(conditionStatus); Serial.println();
   }
 }
-//void getSensorValue() {
-//  normVibration = random(0, 500);
-//  normTemperature = random(0, 100);
-//  normWindSpeed = random(0, 100);
-//  normWaterLevel = random(0, 100);
-//}
+
 void getSensorValue() {
   // vibration
   sensors_event_t a, g, temp;
