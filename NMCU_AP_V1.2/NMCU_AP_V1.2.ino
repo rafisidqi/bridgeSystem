@@ -255,7 +255,7 @@ void getSensorValue() {
     // mapping pembacaan analog dari 0-1024 ke 0 sampai 100 persen
     normWaterLevel = map(analogRead(A0), 0, 512, 0, 100);
     //normWaterLevel = analogRead(A0);
-    //if (normWaterLevel > 100) normWaterLevel = 100;
+    if (normWaterLevel > 100) normWaterLevel = 100;
   }
 }
 
